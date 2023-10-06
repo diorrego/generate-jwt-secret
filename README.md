@@ -40,5 +40,5 @@ Generated JWT secret: c79b7d7d23082c9d64a98d27473b20be364400fded51ddb1a60631ab76
 
 ## Author
 
-* Diego Orrego
-* GitHub: [diorrego]([https://github.com/yourgithubprofile](https://github.com/diorrego)https://github.com/diorrego)
+- Diego Orrego
+- GitHub: [diorrego](https://github.com/diorrego)
