@@ -1,10 +1,10 @@
-# Build stage
+# Build
 FROM rust:1 AS builder
 WORKDIR /app
 COPY . .
 RUN cargo install --path .
 
-# Production stage
+# Production
 FROM debian:buster-slim AS runner
 COPY --from=builder /usr/local/cargo/bin/generate-jwt-secret /usr/local/bin/generate-jwt-secret
 WORKDIR /usr/local/bin
