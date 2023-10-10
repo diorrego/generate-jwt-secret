@@ -6,9 +6,9 @@ RUN cargo install --path .
 
 # Production stage
 FROM debian:buster-slim AS runner
-COPY --from=builder /usr/local/cargo/bin/your-app /usr/local/bin/your-app
+COPY --from=builder /usr/local/cargo/bin/generate-jwt-secret /usr/local/bin/generate-jwt-secret
 WORKDIR /usr/local/bin
-RUN chmod +x your-app
+RUN chmod +x generate-jwt-secret
 
 ENV ROCKET_ADDRESS=0.0.0.0
 EXPOSE 8000
